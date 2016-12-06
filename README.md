@@ -18,12 +18,16 @@ ECB,CBC,CFB and OFB.
 
 import AES 
 
-key = AES.generateRandomKey(16);  # 16 is the primary key size.It could be also 24 or 32. 
+key = AES.generateRandomKey(16); 
 
-msn = AES.encryptData(key,"my message",'CFB'); # We encrypt the text "my message" with CFB mop.
+                16 is the primary key size.It could be also 24 or 32. 
 
-                # This function returns three values:
-                # 1 the mode of operation used
-                # 2 the encrypted message
-                # 3 the iv for some of the modes required.
+msn = AES.encryptData(key,"my message",'CFB'); 
+
+                We encrypt the text "my message" with CFB mop.
+                This function returns three values:
+                1 the mode of operation used
+                2 the encrypted message
+                3 the iv for some of the modes required.
+                
 msn2 = AES.decryptData(msn[1],msn[0],key,msn[2]);
