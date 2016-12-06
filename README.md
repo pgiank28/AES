@@ -14,13 +14,14 @@ ECB,CBC,CFB and OFB.
 
 **EXAMPLE OF USAGE: 
 
---In file 'myScript.py'-- 
+--In file (the one which will use it) 'myScript.py'-- 
 
 import AES 
 
 key = AES.generateRandomKey(16);  # 16 is the primary key size.It could be also 24 or 32. 
 
 msn = AES.encryptData(key,"my message",'CFB'); # We encrypt the text "my message" with CFB mop.
+
                 # This function returns three values:
                 # 1 the mode of operation used
                 # 2 the encrypted message
