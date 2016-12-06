@@ -12,12 +12,14 @@ All the other functions,are gliches to support the implementation of the algorit
 It works for 16,24 and 32-bit Primary keys and for four mode of operations:
 ECB,CBC,CFB and OFB.
 
-EXAMPLE OF USAGE: 
+**EXAMPLE OF USAGE: 
 
 --In file 'myScript.py'-- 
 
-import AES
+import AES 
+
 key = AES.generateRandomKey(16);  # 16 is the primary key size.It could be also 24 or 32. 
+
 msn = AES.encryptData(key,"my message",'CFB'); # We encrypt the text "my message" with CFB mop.
                 # This function returns three values:
                 # 1 the mode of operation used
