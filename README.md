@@ -1,4 +1,4 @@
-# READ ME
+# AES
 This is a very simple AES imlementation in python.
 It's a script that can be used by another python script by importing it
 and calling it's functions.
@@ -12,8 +12,10 @@ All the other functions,are gliches to support the implementation of the algorit
 It works for 16,24 and 32-bit Primary keys and for four mode of operations:
 ECB,CBC,CFB and OFB.
 
-EXAMPLE OF USAGE:
---In file 'myScript.py'--
+EXAMPLE OF USAGE: 
+
+--In file 'myScript.py'-- 
+
 import AES
 key = AES.generateRandomKey(16);  # 16 is the primary key size.It could be also 24 or 32. 
 msn = AES.encryptData(key,"my message",'CFB'); # We encrypt the text "my message" with CFB mop.
