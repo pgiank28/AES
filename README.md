@@ -1,5 +1,5 @@
 # AES
-This is a very simple AES imlementation in python.
+This is a plain AES imlementation in python.
 It's a script that can be used by another python script by importing it
 and calling it's functions.
 
